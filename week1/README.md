@@ -11,10 +11,10 @@
 Описание файлов:
 1. chat_server.js - чат на веб сокетах (серверная часть);
 2. public/index.html - html шаблон;
-3. public/main.js - клиенская часть;
+3. public/main.js - клиентская часть;
 4. public/socket.io.js — библиотека для обмена данными в реальном времени (https://socket.io)
 
-**Как запусскать:**<br>
+**Как запускать:**<br>
 node chat_server.js<br>
 В браузере открыть: [http://localhost:3000](http://localhost:3000)
 
