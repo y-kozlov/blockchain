@@ -6,7 +6,7 @@ const secp256k1 = require('secp256k1');
 const msg = process.argv[2]; // message to be signed you pass
 const digested = digest(msg);
 const msg2 = "sdffdgdgdf";
-const digested_bed = digest(msg2);
+const digested_bad = digest(msg2);
 console.log(`0) Alice's message: 
 	message: ${msg}
 	message digest: ${digested.toString("hex")}`);
@@ -17,6 +17,7 @@ console.log(`0) Alice's message:
 
 // generate privateKey
 let privateKey;
+
 do {
     privateKey = crypto.randomBytes(32);
     console.log("try", privateKey);
